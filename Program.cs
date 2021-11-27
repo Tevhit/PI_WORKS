@@ -53,7 +53,7 @@ namespace PI_WORKS
             lines = lines.Skip(1).ToArray(); // skip first line that is "PLAY_ID SONG_ID CLIENT_ID PLAY_TS"
 
             // Get all records where day = August 10, 2016 
-            // to list of "exhibit_values"
+            // to list of "exhibits_list"
             string[] temp_values;
             DateTime temp_dt;
             foreach (string line in lines)
@@ -69,7 +69,7 @@ namespace PI_WORKS
                         temp_dt));
                 }
             }
-            // So, the "List<ExhibitValue> exhibit_values" shows the distribution 
+            // So, the "List<ExhibitValue> exhibits_list" shows the distribution 
             // distinct song play counts per user on date of August 10, 2016 ONLY
 
             // Getting distinct played songs id for all clients
